@@ -10,3 +10,7 @@
   border-bottom: 2px dotted #000;
   text-decoration: none;
 }
+
+u {
+  text-decoration: underline;
+}

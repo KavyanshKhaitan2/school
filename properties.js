@@ -1,3 +1,4 @@
+debug = false;
 navbarContent = `<nav style="position: sticky; top:0; z-index:999999999;" class="navbar navbar-expand-lg navbar-light bg-light">
 <div class="container-fluid">
   <a class="navbar-brand" href="<root>">AHPS Archives</a>
@@ -22,3 +23,12 @@ body = document.getElementsByTagName('body')[0].innerHTML;
 body = navbarContent + body;
 body = body.split('<root>').join(rootURL)
 document.getElementsByTagName('body')[0].innerHTML = body;
+
+if (debug == true) {
+  
+}
+
+function goToBottom(id) {
+  var element = document.getElementById(id);
+   element.scrollTop = element.scrollHeight - element.clientHeight;
+}

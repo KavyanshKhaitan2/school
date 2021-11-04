@@ -11,16 +11,15 @@
 <body>
   <marquee style="font-family:'Comic Sans MS';font-size:x-large;line-height:1.3em;padding:0.5mm;" direction="left" scrollamount="13" behavior="scroll">Note: This is not associated with Assam Heights Public School; This is a project made by a student named Kavyansh + This site is not intended for use on mobile devices; If on a mobile device, please turn on Desktop Mode.</marquee>
   <h1>Help me make this site better!</h1>
-  <textarea id="feedbackform" cols="100" placeholder="You can send some message which includes Class, Subject, Chapter Number and Question Number or send a URL which redirects to a PDF with some information of the mentioned"></textarea>
+  <textarea id="feedbackform" cols="100" placeholder="You can send some message which includes Class, Subject, Chapter Number and Question Number or send a URL which redirects to a PDF with some information of the mentioned. Found a typo? I will be really happy to fix it"></textarea>
   <br>
   <button onclick='
     const request = new XMLHttpRequest();
     request.open("POST", "https://discord.com/api/webhooks/904308556734558258/-ttj1J_D8F2_Z5HC3Fl_0ueaprwTuh_wR12A4Cya3qXKQjlN56HgCUnx07fVt8As-NLF");
-
     request.setRequestHeader("Content-type", "application/json");
 
     const params = {
-      username: "FeedbackReciever",
+      username: "FeedbackReceiver",
       avatar_url: "",
       content: document.getElementById("feedbackform").value
     }
